@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BOOK INPUT FORM</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div>
+      <h1>BOOK INPUT FORM</h1>
+      <form action="process.php" method="POST">
+        <label>BOOK ID</label><br>
+        <input type="text"  name="BOOK_ID">
+        <br>
+        <label>BOOK TITLE</label><br>
+        <input type="text" name="BOOK_TITLE" required>
+        <br>
+        <label>PUBLICATION DATE</label><br>
+        <input type="date" name="PUBLICATION_DATE" required>
+        <br>
+        <label>AUTHOR ID</label><br>
+        <input type="text" name="AUTHOR_ID" required>
+        <br>
+        <label>CATEGORY ID</label><br>
+        <input type="text" name="CATEGORY_ID" required>
+        <br>
+        <label>BOOK QUANTITY</label><br>
+        <input type="number" name="BOOK_QUANTITY" required>
+        <br>
+        <label>SHELF ID</label><br>
+        <input type="text" name="SHELF_ID" required>
+        <br>
+        <input type="submit" value="SUBMIT">
+      </form>
+
+      
+ 
+    </div>
+
+  </body>
+  <style>
+  h1 {
+    text-align: center;
+  }
+
+  input[type=text], input[type=number], input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: lightpink;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: lightcoral;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+form {
+  padding-left: 25%;
+  padding-right:25% ;
+}
+</style>
+</html>
